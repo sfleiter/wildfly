@@ -1,3 +1,17 @@
+Backport
+========================
+Patched version to backport https://github.com/wildfly/wildfly/pull/6030 to jboss-as-arquillian-common-7.2.0.Final
+
+Deploy/install `arquillian/common` to your repository,
+then add this to your `dependencyManagement` section in maven
+    <dependency>
+        <groupId>org.jboss.as</groupId>
+        <artifactId>jboss-as-arquillian-common</artifactId>
+        <version>7.2.0.Final-stfl_servlet_context_bugfix</version>
+        <scope>test</scope>
+    </dependency>
+
+
 JBoss Application Server 
 ========================
 http://www.jboss.org/jbossas/
